@@ -17,18 +17,22 @@ public class SecondActivity extends AppCompatActivity {
 
         btnCallFirst = findViewById(R.id.btnCallFirst);
 
+        // Recuperamos los datos (Bundle) enviados por el Intent Explícito
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             String value1 = extras.getString("Value1");
             String value2 = extras.getString("Value2");
             
+            // Armamos el mensaje y lo mostramos en un Toast
             String message = "Recibido:\n" + value1 + "\n" + value2;
             Toast.makeText(this, message, Toast.LENGTH_LONG).show();
         }
 
+        // Configuración del botón para volver atrás
         btnCallFirst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // Finalizamos SecondActivity, lo que nos devuelve a MainActivity
                 finish();
             }
         });
