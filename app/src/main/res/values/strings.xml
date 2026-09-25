@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">IntentDemo</string>
+    <string name="first_activity_title">Primera Actividad</string>
+    <string name="url_hint">Ingresa una URL (ej: www.google.com)</string>
+    <string name="visit_button">Visitar URL</string>
+    <string name="call_second_activity">Llamar a Segunda Actividad</string>
+    <string name="second_activity_title">Segunda Actividad</string>
+    <string name="call_first_activity">Llamar a Primera Actividad</string>
+    <string name="empty_url_warning">Por favor, ingresa una URL</string>
 </resources>
